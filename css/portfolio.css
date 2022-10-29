@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: #01528A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 270px;
+    font-size: 1.2em;
+    filter: drop-shadow(100px 0px 0px grey);
+    font-size: 25px;
+    box-shadow: 0px 10px 1px #000;;
+
+}
+header a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header li{ 
+    list-style: none;
+    margin:20px 0px;
+    font-size: calc(10px + 3vw);
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+        
+    
+}
+    
+.Logo-fecsa{
+    width: calc(10px + 20vw);
+    max-width: 150px;
+    border-radius: 100%;
+    
+}
+
+.contenedor-ingreso{
+    display: flex;
+    justify-content: end;
+}
+.img-ingreso{
+    width: calc(10px + 10vw);
+    max-width: 140px;
+    display:block ;
+    
+
+}
+.estado-cuenta{
+    display: none;
+}
+
+@media screen and (min-widht: "900px") {
+    header{
+        background-color: #000;
+    }
+    
+}

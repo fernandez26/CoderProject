@@ -154,3 +154,12 @@ footer table th{
     padding: 5px 0px;
 }
 
+/*--------------Media Queries--------*/
+@media screen and (min-widht: 900px){
+    header{
+        font-size: 1rem;
+    }
+    .nav-bar{
+        flex-direction: row;
+    }   
+}
