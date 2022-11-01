@@ -29,19 +29,28 @@ header li{
     margin:20px 0px;
     font-size: calc(10px + 3vw);
 }
+.enlace__inicio p{
+    display: none;
+}
+
 
 .nav-bar{
     display: flex;
-    flex-direction: column;
+    
+    
         
     
 }
     
 .Logo-fecsa{
     width: calc(10px + 20vw);
-    max-width: 150px;
+    
     border-radius: 100%;
     
+}
+
+#enlace__inicio--texto{
+    display: none;
 }
 
 .contenedor-ingreso{
@@ -83,12 +92,21 @@ h1{
     top: 25%;
     left: 5%;
 }
+
 span{
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: bold;
+
+    display: inline-block;
+    
+    animation: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite ;
 }
 /*---------beneficios---------*/
+.img__medio{display:none;}
+
 .ban-beneficios{
     background-color: #eeebc2;
     padding: 15px 0px;
@@ -153,13 +171,158 @@ footer table th{
     font-size: 1.1rem;
     padding: 5px 0px;
 }
+#firma{
+    background-color: #01528A;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 8px;
+}
 
 /*--------------Media Queries--------*/
-@media screen and (min-widht: 900px){
+@media only screen and (min-width: 768px){
     header{
         font-size: 1rem;
+        height: 110px  ;
+        justify-content: space-between;
+        padding: 0px 30px;
+        
+        
+    }
+header a:hover{ color:#C7BFAA;}
+    .enlace__inicio{
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+    .enlace__inicio a{
+        display: block;
+        margin: 10px;
+        font-size: medium;
+        color:aliceblue;
     }
     .nav-bar{
+        width: 50%;
+        
+    }
+    .nav-bar ul{
+        display: flex;
         flex-direction: row;
-    }   
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }  
+    .nav-bar li{
+        font-size: 1.5rem;
+
+    }
+    
+    .Logo-fecsa{
+        max-width: 80px;
+    }
+    .contenedor-ingreso{
+        justify-content: end;
+        align-items: center;
+    }
+    .img-ingreso{
+        width: 25%;
+    }
+    .estado-cuenta{
+        display: block;
+        font-size: 150%;
+    }
+/*--------Main------*/
+/*---------banner---------*/
+    h1{
+        top: 35%;
+        left: 5%;
+    }
+   
+    .img__medio{
+        padding: 25px;
+        width: cover;
+        display: flex;
+        justify-content: center;
+    
+    }
+/*---------beneficios---------*/
+    .logo-medio{
+        width: 250px;
+        border-radius: 100%;
+        filter: drop-shadow(1px 1px 3px grey);
+        text-align: center;
+        position: relative;
+        /* left: -40px; */
+    }
+    .ban-beneficios{
+        padding-bottom: 25px;
+
+    }
+    h2{
+        font-size: 7vw;
+    }
+    .ban-beneficios ul li{
+        font-size: 1.5vw;
+        margin: 30px;
+
+    }
+/*-------Video presentacion--------*/    
+    .video{
+        
+        
+        height: 0;
+        overflow: hidden;
+    }
+    .video iframe{
+        
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+    }
+    .cont-alianzas{
+        position: relative;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:"a1 a2 a3"
+                            "b1 b1 b1" ;
+    }
+    /*--------Alianzas------*/
+    .cont-alianzas img{
+        width: 20vw;
+    }
+    #hijo4{
+        position:absolute;
+        top: 50%;
+        left: 25%;
+    }
+    #hijo6{
+        position:absolute;
+        top: 50%;
+        right: 25%;
+    }
+    .alianza{
+        padding: 30px;
+        filter: drop-shadow(1px 1px 1px grey);
+        
+    }
+/*---------Footer---------*/
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 0px;
+        height: auto;
+    }
+    footer img{
+        width: 15vw;
+    }
+    footer table{
+        font-size: calc(1rem + 0.8vw);
+    }
+    footer table th{
+        font-size: calc(1rem + 0.9vw);
+    }
+    
+
 }
