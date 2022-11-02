@@ -58,7 +58,7 @@ header li{
     justify-content: end;
 }
 .img-ingreso{
-    width: calc(10px + 10vw);
+    width: calc(10px + 15vw);
     max-width: 140px;
     display:block ;
     
