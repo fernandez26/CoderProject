@@ -139,7 +139,7 @@ footer{
     background-color: #01528A;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 700px;
 }
@@ -161,11 +161,11 @@ footer table th{
     font-size: 1.5rem;
     padding-bottom: 8px;
 }
-
+/*--------------------------Media Queries-----------------*/
 @media only screen and (min-width: 768px){
     header{
         font-size: 1rem;
-        height: 110px  ;
+        height: 100px  ;
         justify-content: space-between;
         padding: 0px 30px;
         
@@ -216,9 +216,15 @@ header a:hover{ color:#C7BFAA;}
 
    /*-------------------Main---------------*/ 
 
-
-
-
+    .separador__imagen{
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .separador__imagen--img{
+        max-width: 1024px;
+    }
 
 
 
@@ -234,10 +240,10 @@ header a:hover{ color:#C7BFAA;}
         color: #C7BFAA;
         background-color: #01528A;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 700px;
+        height: 300px;
     }
     footer img{
         width: 200px;
