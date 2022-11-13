@@ -1,0 +1,169 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  background-color: #01528A;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: 270px;
+  font-size: 1.2em;
+  filter: drop-shadow(100px 0px 0px grey);
+  font-size: 25px; }
+  header a {
+    text-decoration: none;
+    color: aliceblue; }
+  header li {
+    list-style: none;
+    margin: 20px 0px;
+    font-size: calc(10px + 3vw); }
+
+.enlace__inicio p {
+  display: none; }
+
+.nav-bar {
+  display: flex; }
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
+
+.Logo-fecsa {
+  width: calc(10px + 20vw);
+  border-radius: 100%; }
+
+#enlace__inicio--texto {
+  display: none; }
+
+.contenedor-ingreso {
+  display: flex;
+  justify-content: end; }
+
+.img-ingreso {
+  width: calc(10px + 15vw);
+  max-width: 140px;
+  display: block; }
+
+.estado-cuenta {
+  display: none; }
+
+/*---------------------Main---------------------*/
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px; }
+  .form .logo__cuenta img {
+    width: 200px;
+    border-radius: 100%;
+    filter: drop-shadow(1px 1px 1px grey);
+    border-color: #C7BFAA;
+    padding: 30px; }
+  .form .form__etiqueta {
+    font-size: 1.5rem; }
+
+/*--------Footer----------*/
+footer {
+  color: #C7BFAA;
+  background-color: #01528A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 700px; }
+
+footer img {
+  width: 200px; }
+
+footer table {
+  padding: 20px; }
+
+footer table th {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 5px 0px; }
+
+#firma {
+  background-color: #01528A;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 8px; }
+
+@media only screen and (min-width: 768px) {
+  header {
+    font-size: 1rem;
+    height: 100px;
+    justify-content: space-between;
+    padding: 0px 10px; }
+    header a:hover {
+      color: #C7BFAA; }
+  .enlace__inicio {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center; }
+  .enlace__inicio a {
+    display: block;
+    margin: 10px;
+    font-size: medium;
+    color: aliceblue; }
+  .nav-bar {
+    width: 50%; }
+    .nav-bar ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%; }
+    .nav-bar li {
+      font-size: 1.5rem; }
+  .Logo-fecsa {
+    max-width: 80px; }
+  .contenedor-ingreso {
+    justify-content: center;
+    align-items: center;
+    font-size: 10px; }
+  .img-ingreso {
+    width: 25%; }
+  .estado-cuenta {
+    display: block;
+    font-size: 150%; }
+  /*------------------Main------------------*/
+  .form {
+    height: 650px; }
+    .form .logo__cuenta img {
+      padding: 0px; }
+    .form .form__estilo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-color: #000;
+      border-style: dotted;
+      width: 300px;
+      height: 400px; }
+  /*----------------------Footer-----------------------*/
+  footer {
+    color: #C7BFAA;
+    background-color: #01528A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px; }
+    footer img {
+      width: 200px; }
+    footer table {
+      padding: 20px; }
+    footer table th {
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 5px 0px; } }
